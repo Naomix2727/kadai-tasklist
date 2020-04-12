@@ -33,7 +33,7 @@ before_action :set_task, only: [:show, :edit, :update, :destroy]
 			redirect_to @task
 
 		else
-			flash[:denger] = 'Task は更新されませんでした'
+			flash[:danger] = 'Task は更新されませんでした'
 			render :edit
 		end
 	end
